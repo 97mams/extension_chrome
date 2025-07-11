@@ -10,7 +10,7 @@
   "action": {
     "default_popup": "index.html",
     "default_icon": {
-      "128": "img/keno-icon.svg"
+      "128": "img/keno-icon.png"
     },
     "default_title": "keno"
   },
