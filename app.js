@@ -5,6 +5,7 @@ btn.addEventListener('click', (e) => {
   e.preventDefault()
   let formData = input.value
   fetchData(formData)
+  input.value = ""
 })
 
 const fetchData = (formData) => {
