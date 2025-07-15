@@ -1,9 +1,19 @@
 const input = document.getElementById('keno-input')
 const btn   = document.getElementById('keno-btn')
+const alertElement = document.getElementById('alert')
 
 btn.addEventListener('click', (e) => {
   e.preventDefault()
   let formData = input.value
+  if (!formData) {
+    alertElement.textContent = "💥 Eh ! ampidiro ny chiffre.."
+    input.focus()
+    setTimeout(() => {
+      alertElement.textContent = ""
+    }, 3000)
+
+    return
+  }
   fetchData(formData)
   input.value = ""
 })
